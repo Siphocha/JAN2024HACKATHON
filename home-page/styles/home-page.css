@@ -1,0 +1,117 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 327.5rem;
+}.home-page-93a {
+  box-sizing: border-box;
+  padding: 44.9rem 98rem 31.4rem 57rem;
+  width: 406rem;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  filter: blur(0.2rem);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/kelvin-trautman191120icraflandrestorationkenya-1-bg.png');
+  background-color: #6d8c54;
+}
+.home-page-93a .auto-group-rvku-6N8 {
+  margin-bottom: 12.8rem;
+  width: 100%;
+  height: 72.3rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.home-page-93a .auto-group-rvku-6N8 .rectangle-66-yKS {
+  width: 150.7rem;
+  height: 55.7rem;
+  position: absolute;
+  left: 70.8rem;
+  top: 16.6rem;
+  border: solid 5rem rgba(0, 0, 0, 0.6999999881);
+  box-sizing: border-box;
+  background-color: rgba(251, 251, 251, 0.6999999881);
+  border-radius: 4.5rem;
+}
+.home-page-93a .auto-group-rvku-6N8 .buttoncover {
+  width: 150.7rem;
+  height: 9.8rem;
+  position: absolute;
+  left: 54rem;
+  top: 41.6rem;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 1.2175;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.button1 {
+  width: 110.7rem;
+  height: 40.8rem;
+  position: absolute;
+  left: 90rem;
+  top: 25.6rem;
+  font-size: 8rem;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.2175;
+  background-color: transparent;
+  border-color: transparent;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home-page-93a .button2-cover {
+  margin: 0rem 36.8rem 0rem 75.6rem;
+  width: calc(100% - 130.4rem);
+  height: 46.0rem;
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 1.2175;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  flex-shrink: 0;
+}
+
+.button2 {
+  width: 80rem;
+  height: 20rem;
+  bottom: 35.6rem;
+  left: 50rem;
+  cursor: pointer;
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 1.2175;
+  text-decoration-line: underline;
+  color: #000000;
+  font-family: Montserrat, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #f7f05f;
+  border-color: black;
+  border-radius: 1.5rem;
+  flex-shrink: 0;
+}
