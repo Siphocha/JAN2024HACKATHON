@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home-page.css') }}"/>
+  </head>
+
+  <body>
+    <div class="home-page">
+      <div class="sub-home-page">
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data" >
+          <div class="click-to-upload">
+            <input type="file" name="file" accept=".png, .jpg, .jpeg, .gif" id="fileInput" />
+          </div>
+          <div role="button" class="button-cover">
+            <button type="submit" class="button1">UPLOAD IMAGE</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="button2-cover">
+        <button role="button" class="button2" onclick="processImage()">PROCESS IMAGE</button>
+      </div>
+    </div>
+
+    <div id="resultImageContainer"></div>
+
+    <script>
+      function processImage() {
+        // Perform AJAX request to upload and process the image
+        let formData = new FormData(document.getElementById('uploadForm'));
+    
+        fetch('/upload', {
+          method: 'POST',
+          body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response from the upload route
+          if ('error' in data) {
+            alert('Error: ' + data.error);
+          } else {
+            // Create an image element
+            const resultImage = new Image();
+            resultImage.src = data.result;
+    
+            // Append the image to the resultImageContainer
+            const resultImageContainer = document.getElementById('resultImageContainer');
+            resultImageContainer.innerHTML = ''; 
+            resultImageContainer.appendChild(resultImage);
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      }
+    </script>
+  </body>
+</html>
